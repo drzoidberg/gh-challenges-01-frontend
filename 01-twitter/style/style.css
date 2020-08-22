@@ -1,5 +1,7 @@
 :root {
     --main-color-bg: #71c9f8;
+    --main-bg: white;
+
     --main-deg-bg: linear-gradient(
         90deg,
         #30abec 0%,
@@ -7,6 +9,7 @@
     );
 
     --btn-color-primary: #1da1f2;
+    --btn-color-primary-darker: #118fdd;
     --btn-color-secondary: white;
 
     --btn-color-bg-primary: #1da1f2;
@@ -38,17 +41,61 @@
 }
 
 .main-wrapper {
-    height: 100vh;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: white;
+    grid-template-rows: 90fr;
+    height: 100vh;
 }
 
 .main-wrapper .left-wrapper {
-    background: var(--main-deg-bg);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-deg-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-wrapper .left-wrapper .twitter-bg-logo g path {
+    fill: var(--btn-color-primary-darker);
+}
+
+.main-wrapper .left-wrapper .twitter-bg-logo {
+    position: absolute;
+    height: 160vh;
+    left: -5rem;
+    z-index: 0;
+}
+
+.main-wrapper .left-wrapper ul {
+    display: block;
+    max-width: 38rem;
+    z-index: 10;
+}
+
+.main-wrapper .left-wrapper ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: var(--font-family);
+    padding-bottom: 3rem;
+}
+
+.main-wrapper .left-wrapper ul li span {
+    font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.icon-bullet-points {
+    display: inline-block;
+    height: 2.9rem;
+    padding-right: 1.5rem;
+    filter: invert();
 }
 
 .main-wrapper .right-wrapper {
@@ -61,17 +108,17 @@
 }
 
 .footer-wrapper ul li {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-ul {
+.footer-wrapper ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.5rem;
-    height: 7.8rem;
+    height: 4.9rem;
     justify-content: center;
     min-height: 0px;
     min-width: 0px;
@@ -89,7 +136,11 @@ ul {
     padding-right: 1.5rem;
 }
 
-.icon-points {
-    height: 2.9rem;
-    filter: invert();
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+span.footer-link:hover {
+    cursor: default;
+    text-decoration: none;
 }
