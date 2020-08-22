@@ -1,0 +1,50 @@
+:root {
+    --main-color-bg: #71c9f8;
+    --main-deg-bg: linear-gradient(
+        90deg,
+        #30abec 0%,
+        #97daff 100%
+    );
+
+    --btn-color-primary: #1da1f2;
+    --btn-color-secondary: white;
+
+    --btn-color-bg-primary: #1da1f2;
+    --btn-color-bg-primary-hover: #1a82c2;
+    --btn-color-txt-primary: white;
+
+    --btn-color-bg-secondary: white;
+    --btn-color-bg-secondary-hover: rgba(28, 171, 214, 0.24);
+    --btn-color-txt-secondary: black;
+
+    --input-color-bg: #f5f8fa;
+    --input-color-txt-label-active: #0081d1;
+    --input-color-txt: black;
+
+    --helper-color-txt: #657786;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper.left {
+    background: var(--main-deg-bg);
+}
+.wrapper.right {
+    background-color: white;
+}

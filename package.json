@@ -1,24 +1,24 @@
 {
-  "name": "gclassroom-01-frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test-tw": "live-server 01-twitter/index.html",
-    "test-ig": "live-server 02-instagram/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drzoidberg/gclassroom-01-frontend.git"
-  },
-  "keywords": [],
-  "author": "Jorge Vicens Valor",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drzoidberg/gclassroom-01-frontend/issues"
-  },
-  "homepage": "https://github.com/drzoidberg/gclassroom-01-frontend#readme",
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "name": "gclassroom-01-frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test-tw": "live-server 01-twitter/index.html",
+        "test-ig": "live-server 02-instagram/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drzoidberg/gclassroom-01-frontend.git"
+    },
+    "keywords": [],
+    "author": "Jorge Vicens Valor",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/drzoidberg/gclassroom-01-frontend/issues"
+    },
+    "homepage": "https://github.com/drzoidberg/gclassroom-01-frontend#readme",
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    }
 }
