@@ -17,7 +17,7 @@
     --btn-color-txt-primary: white;
 
     --btn-color-bg-secondary: white;
-    --btn-color-bg-secondary-hover: rgba(28, 171, 214, 0.24);
+    --btn-color-bg-secondary-hover: rgba(28, 171, 214, 0.089);
     --btn-color-txt-secondary: black;
 
     --input-color-bg: #f5f8fa;
@@ -38,6 +38,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 .main-wrapper {
@@ -81,7 +82,6 @@
     display: flex;
     align-items: center;
     color: white;
-    font-family: var(--font-family);
     padding-bottom: 3rem;
 }
 
@@ -101,16 +101,82 @@
 .main-wrapper .right-wrapper {
     background-color: white;
     grid-column: 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-wrapper .right-wrapper .card {
+    width: 38rem;
+}
+
+.card-logo {
+    height: 4.2rem;
+    margin-bottom: 2rem;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 4.9rem;
+}
+
+.cta {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    border: 1px solid var(--btn-color-bg-primary);
+    border-radius: 50rem;
+    padding: 1rem;
+    width: 100%;
+    z-index: 0;
+    transition: all 0.2s;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+}
+
+.btn.btn-primary {
+    background-color: var(--btn-color-bg-primary);
+    color: var(--btn-color-txt-primary);
+}
+
+.btn.btn-secondary,
+.btn.btn-login {
+    background-color: var(--btn-color-bg-secondary);
+    color: var(--btn-color-bg-primary);
+}
+
+.btn-login {
+    width: initial;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--btn-color-bg-primary-hover);
+    color: var(--btn-color-txt-primary);
+}
+
+.btn.btn-secondary:hover {
+    background-color: var(--btn-color-bg-secondary-hover);
+    color: var(--btn-color-bg-primary);
+}
+
+.login-form form {
+    top: 1rem;
+    height: 1rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
 }
 
 .footer-wrapper {
     grid-column: 1 / -1;
-}
-
-.footer-wrapper ul li {
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
 .footer-wrapper ul {
@@ -118,7 +184,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.5rem;
-    height: 4.9rem;
     justify-content: center;
     min-height: 0px;
     min-width: 0px;
@@ -128,10 +193,16 @@
     list-style-type: none;
 }
 
+.footer-wrapper ul li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem 0;
+}
+
 .footer-link {
     text-decoration: none;
     color: var(--helper-color-txt);
-    font-family: var(--font-family);
     font-size: 1.3rem;
     padding-right: 1.5rem;
 }
