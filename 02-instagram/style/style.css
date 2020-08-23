@@ -175,6 +175,10 @@ a.forgot-passwd-text {
     font-size: 1.2rem;
 }
 
+.card.card-signup {
+    margin-bottom: 0;
+}
+
 .card.card-signup .signup {
     font-size: 1.4rem;
     text-align: center;
