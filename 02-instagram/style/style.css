@@ -45,12 +45,16 @@ body {
     justify-content: center;
 }
 
-/* .wrapper-left {
-    background-color: green;
-} */
+.wrapper-left img {
+    position: relative;
+    left: 2rem;
+}
 
 .wrapper-right {
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 2rem;
 }
 
 .card {
@@ -62,6 +66,7 @@ body {
     flex-direction: column;
     border: 1px solid var(--color-border);
     border-radius: 0.1rem;
+    margin-bottom: 1rem;
 }
 
 .logo {
@@ -80,7 +85,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
 }
 
 .form-login .input-login {
@@ -101,6 +106,99 @@ body {
     font-size: 1.4rem;
     border: none;
     padding: 0.7rem 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.separator-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.separator {
+    width: 35%;
+    margin: 0 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.or {
+    color: var(--color-input-txt-label);
+}
+
+.fb-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.img-fb {
+    background-image: url('../assets/img/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+    margin-right: 1rem;
+}
+
+.fb-login-text {
+    color: var(--color-links);
+    font-size: 1.4rem;
+}
+
+.forgot-passwd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a.forgot-passwd-text {
+    text-decoration: none;
+    color: var(--color-links);
+    font-size: 1.2rem;
+}
+
+.card.card-signup .signup {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card.card-signup .register {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+.download-app {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+}
+
+.download-app .row p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.download-app .row.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-download {
+    margin-right: 1rem;
+}
+
+.download-btn-img {
+    height: 4rem;
 }
 
 .footer {
