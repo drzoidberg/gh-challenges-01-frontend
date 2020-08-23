@@ -151,6 +151,9 @@
 
 .btn-login {
     width: initial;
+    top: 0.8rem;
+    position: relative;
+    min-width: 13rem;
 }
 
 .btn:hover {
@@ -159,6 +162,7 @@
 
 .btn.btn-primary:hover {
     background-color: var(--btn-color-bg-primary-hover);
+    border: 1px solid var(--btn-color-bg-primary-hover);
     color: var(--btn-color-txt-primary);
 }
 
@@ -167,15 +171,46 @@
     color: var(--btn-color-bg-primary);
 }
 
-.login-form form {
+.login-form {
     top: 1rem;
     height: 1rem;
     width: 100%;
     position: absolute;
-    display: flex;
 }
 
-.footer-wrapper {
+.login-form form {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form .input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form .input-form {
+    background-color: var(--input-color-bg);
+    margin-right: 1.5rem;
+}
+
+.login-form .input-form label {
+    background-color: var(--input-color-bg);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: var(--helper-color-txt);
+}
+
+.login-form .input-form input {
+    background-color: var(--input-color-bg);
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.login-form .input-form input .footer-wrapper {
     grid-column: 1 / -1;
 }
 
