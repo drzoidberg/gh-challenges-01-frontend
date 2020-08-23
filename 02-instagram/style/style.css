@@ -1,12 +1,12 @@
 :root {
     --bg-main: #fafafa;
     --color-accent: #71c9f8;
-    --color-links: #71c9f8;
+    --color-links: #00376b;
 
     --input-color-txt-label: #919191;
     --input-color-txt: black;
 
-    --helper-color-txt: #929292;
+    --helper-color-txt: #8e8e8e;
 
     --font-size: 1.2rem;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -21,4 +21,64 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+.main-wrapper {
+    max-width: 94rem;
+    margin: 0 auto;
+    /* background-color: red; */
+    height: 90vh;
+    display: flex;
+}
+
+.wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .wrapper-left {
+    background-color: green;
+} */
+
+.wrapper-right {
+    background-color: pink;
+}
+
+.footer {
+    max-width: 120rem;
+    height: 10rem;
+    margin: 0 auto;
+    padding: 2rem 9rem;
+    font-weight: bold;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2.19rem;
+}
+
+.footer ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-links);
+}
+.footer span {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--helper-color-txt);
 }
