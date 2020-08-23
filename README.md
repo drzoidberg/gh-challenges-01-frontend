@@ -1,9 +1,9 @@
-# gclassroom-01-frontend
+# gh-challenges-01-frontend
 
 
 ## 📦 Description
 
-gclassroom-01-frontend is a tiny package centered in putting into practice the basics of HTML & CSS
+gh-challenges-01-frontend is a tiny package centered in putting into practice the basics of HTML & CSS
 
 It consists of two projects, both of them an attempt to replicate the look and feel of the login pages of:
 
