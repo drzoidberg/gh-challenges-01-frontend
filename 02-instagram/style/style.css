@@ -1,12 +1,14 @@
 :root {
     --bg-main: #fafafa;
-    --color-accent: #71c9f8;
+    --color-accent: #0095f6;
     --color-links: #00376b;
+    --color-border: #dbdbdb;
 
-    --input-color-txt-label: #919191;
-    --input-color-txt: black;
+    --color-input-txt-label: #919191;
+    --color-input-txt: black;
+    --color-input-btn: #0095f6;
 
-    --helper-color-txt: #8e8e8e;
+    --color-helper-txt: #cecece;
 
     --font-size: 1.2rem;
     --font-family: system-ui, -apple-system, BlinkMacSystemFont,
@@ -48,7 +50,57 @@ body {
 } */
 
 .wrapper-right {
-    background-color: pink;
+    justify-content: flex-start;
+}
+
+.card {
+    padding: 2rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+    border-radius: 0.1rem;
+}
+
+.logo {
+    background-image: url('../assets/img/sprite.png');
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    overflow: hidden;
+    text-indent: 110%;
+    margin: 2.2rem auto 1.2rem;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.form-login .input-login {
+    width: 100%;
+    background-color: var(--bg-main);
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid var(--color-helper-txt);
+    border-radius: 3px;
+    padding: 1.4rem 0 0.2rem 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.form-login .input-login.btn-login {
+    background-color: var(--color-input-btn);
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: none;
+    padding: 0.7rem 0.9rem;
 }
 
 .footer {
@@ -80,5 +132,5 @@ body {
     display: block;
     margin-top: 1.5rem;
     font-size: 1.2rem;
-    color: var(--helper-color-txt);
+    color: var(--color-helper-txt);
 }
