@@ -51,9 +51,9 @@ body {
 }
 
 .slideshow-container {
-    position: absolute;
-    top: 217px;
-    left: 271px;
+    position: relative;
+    top: -209px;
+    left: -283px;
 }
 
 .slide {
